@@ -1,7 +1,6 @@
 .App {
   position: absolute;
   min-height: 100vh;
-  padding: 20px;
 }
 
 .App-signup {
@@ -9,6 +8,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-content: center;
   align-items: center;
   padding: 50px;
   color: #000000;

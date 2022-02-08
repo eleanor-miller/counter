@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./yarn.svg";
+import logo from "../images/yarn-logo.svg";
 
 function Header() {
   return (

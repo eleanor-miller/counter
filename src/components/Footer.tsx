@@ -1,6 +1,7 @@
 import React from "react";
+import { useState } from "react";
 
-import copyright from "./copyright.svg";
+import copyright from "../images/copyright.svg";
 
 function Footer() {
   return (

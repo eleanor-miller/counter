@@ -1,9 +1,9 @@
 import React from "react";
 
-import logo from "./yarn.svg";
-import wipstitch from "./wipstitch.svg";
+import logo from "../images/yarn-logo.svg";
+import wipstitch from "../images/wipstitch.svg";
 
-import "./signupstyle.css";
+import "../signupstyle.css";
 import Footer from "./Footer";
 
 const Regex = RegExp(
