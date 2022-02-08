@@ -1,15 +1,26 @@
 import React from "react";
-import { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  useParams,
+} from "react-router-dom";
 
-import logo from "./yarn.svg";
-import wipstitch from "./wipstitch.svg";
+import "./App.css";
+import Header from "./components/Header";
 import Footer from "./Footer";
-import { SignUp } from "./components/Sign-Up";
 
 function App() {
   return (
-    <div>
-      <SignUp />
+    <div className="App">
+      <header>
+        <Header />
+      </header>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

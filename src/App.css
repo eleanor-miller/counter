@@ -1,4 +1,17 @@
 .App {
+  position: absolute;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App-signup {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  color: #000000;
   text-align: center;
 }
 
@@ -14,18 +27,26 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ffffff;
+  min-height: 5vh;
+  padding: 15px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: left;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000000;
+}
+
+.App-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  background-color: #ff7323;
 }
 
 .App-link {
-  color: #61dafb;
+  color: #ff7323;
 }
 
 @keyframes App-logo-spin {
@@ -39,4 +60,6 @@
 
 button {
   font-size: calc(10px + 2vmin);
+  background-color: #ff7323;
+  color: #ffffff;
 }
