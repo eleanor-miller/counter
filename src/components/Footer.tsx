@@ -6,7 +6,7 @@ import copyright from "../images/copyright.svg";
 function Footer() {
   return (
     <div className="App-footer">
-      <img src={copyright} />
+      <img src={copyright} className="center" />
     </div>
   );
 }
