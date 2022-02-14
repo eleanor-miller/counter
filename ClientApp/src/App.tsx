@@ -10,12 +10,12 @@ import {
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Login from "./components/LogIn";
-import { SignUp } from "./components/SignUp";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Project from "./components/Project";
-import Counter from "./components/Counter";
+import Login from "./pages/LogIn";
+import { SignUp } from "./pages/SignUp";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Project from "./pages/Project";
+import Counter from "./pages/Counter";
 
 function App() {
   return (
