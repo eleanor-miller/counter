@@ -1,33 +1,34 @@
 import React from "react";
 import { useState } from "react";
 
-import Button from "./Button";
+import Button from "../components/Button";
 
 function Counter() {
-  const [count, setCount] = useState(0);
+  const [rowCount, setRowCount] = useState(0);
+  const [stitchCount, setStitchCount] = useState(0);
 
   let rowIncrementCount = () => {
-    setCount(count + 1);
+    setRowCount(rowCount + 1);
   };
 
   let rowDecrementCount = () => {
-    setCount(count - 1);
+    setRowCount((rowCount) => Math.max(rowCount - 1, 0));
   };
 
   let stitchIncrementCount = () => {
-    setCount(count + 1);
+    setStitchCount(stitchCount + 1);
   };
 
   let stitchDecrementCount = () => {
-    setCount(count - 1);
+    setStitchCount((stitchCount) => Math.max(stitchCount - 1, 0));
   };
 
   return (
     <div className="counter">
       <div>
         <div className="count">
-          <h3>Row Count:</h3>
-          <h1>{count}</h1>
+          <h1>Row Count:</h1>
+          <h1>{rowCount}</h1>
         </div>
         <div className="buttons">
           <Button title={"-"} action={rowDecrementCount} />
@@ -36,8 +37,8 @@ function Counter() {
       </div>
       <div>
         <div className="count">
-          <h3>Stitch Count:</h3>
-          <h1>{count}</h1>
+          <h1>Stitch Count:</h1>
+          <h1>{stitchCount}</h1>
         </div>
         <div className="buttons">
           <Button title={"-"} action={stitchDecrementCount} />

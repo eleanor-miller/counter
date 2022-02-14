@@ -1,19 +1,17 @@
+import React from "react";
 import { useState } from "react";
 import "../App.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function App() {
+function Projects() {
   return (
     <>
       <header className="App-header">
         <Header />
       </header>
 
-      <div>Projects Container</div>
-      <div>Counter Container</div>
-      <div>Inventory Container</div>
-      <div>Library Container</div>
+      <div>Render list of all projects.</div>
 
       <footer className="App-footer">
         <Footer />
@@ -22,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Projects;

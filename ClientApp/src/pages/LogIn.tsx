@@ -3,18 +3,16 @@ import { useState } from "react";
 import "../App.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import logo from "../images/yarn-logo.svg";
 
 function App() {
   return (
     <>
-      <header className="App-header">
-        <Header />
+      <header className="App-logo">
+        <img src={logo} height={200} width={200} />
       </header>
 
-      <div>Projects Container</div>
-      <div>Counter Container</div>
-      <div>Inventory Container</div>
-      <div>Library Container</div>
+      <div>Create Login Page</div>
 
       <footer className="App-footer">
         <Footer />

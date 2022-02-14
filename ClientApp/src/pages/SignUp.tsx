@@ -4,6 +4,7 @@ import logo from "../images/yarn-logo.svg";
 import wipstitch from "../images/wipstitch.svg";
 
 import "../signupstyle.css";
+import "../app.css";
 import Footer from "./Footer";
 
 const Regex = RegExp(
@@ -82,12 +83,14 @@ export class SignUp extends React.Component<SignUpProps, SignUpState> {
   render() {
     const { errors } = this.state;
     return (
-      <div className="App-signup">
-        <div>
-          <img src={logo} height={200} width={200} />
-        </div>
-        <div>
-          <img src={wipstitch} />
+      <div>
+        <div className="App-signup">
+          <div>
+            <img src={logo} height={200} width={200} />
+          </div>
+          <div>
+            <img src={wipstitch} />
+          </div>
         </div>
         <div className="wrapper">
           <div className="form-wrapper">
@@ -128,7 +131,9 @@ export class SignUp extends React.Component<SignUpProps, SignUpState> {
             </form>
           </div>
         </div>
-        <Footer />
+        <div className="App-footer">
+          <Footer />
+        </div>
       </div>
     );
   }

@@ -4,17 +4,15 @@ import "../App.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function App() {
+function Home() {
   return (
     <>
       <header className="App-header">
         <Header />
       </header>
 
-      <div>Projects Container</div>
-      <div>Counter Container</div>
-      <div>Inventory Container</div>
-      <div>Library Container</div>
+      <div>Link to Projects Page</div>
+      <div>Link to Counter Page</div>
 
       <footer className="App-footer">
         <Footer />
@@ -23,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

@@ -21,12 +21,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <header>
-          <Header />
-        </header>
         <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/projects" element={<Projects />} />
@@ -34,9 +30,6 @@ function App() {
           <Route path="/counter" element={<Counter />} />
         </Routes>
       </Router>
-      <footer>
-        <Footer />
-      </footer>
     </div>
   );
 }
