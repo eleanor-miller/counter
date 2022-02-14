@@ -5,7 +5,7 @@ import wipstitch from "../images/wipstitch.svg";
 
 import "../signupstyle.css";
 import "../app.css";
-import Footer from "./Footer";
+import Footer from "../components/Footer";
 
 const Regex = RegExp(
   /^\s?[A-Z0–9]+[A-Z0–9._+-]{0,}@[A-Z0–9._+-]+\.[A-Z0–9]{2,4}\s?$/i
