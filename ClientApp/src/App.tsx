@@ -30,11 +30,12 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<App />} />
           <Route
             path="/login"
             element={<Login user={user} setUser={setUser} />}
           />
+          <Route path="/home" element={<Home />} />
           <Route path="/project" element={<Project />} />
           <Route path="/counter" element={<Counter />} />
         </Routes>
