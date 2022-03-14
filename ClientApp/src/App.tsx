@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -10,22 +10,31 @@ import {
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Login from "./pages/LogIn";
-import { SignUp } from "./pages/SignUp";
+import Login from "./pages/Login";
 import Home from "./pages/Home";
-import Projects from "./pages/Projects";
 import Project from "./pages/Project";
 import Counter from "./pages/Counter";
 
+import { User } from "./Types";
+
+import "@shoelace-style/shoelace/dist/themes/light.css";
+import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path";
+
+setBasePath(
+  "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.71/dist/"
+);
+
 function App() {
+  const [user, setUser] = useState<User | null>(null);
   return (
     <div className="App">
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route
+            path="/login"
+            element={<Login user={user} setUser={setUser} />}
+          />
           <Route path="/project" element={<Project />} />
           <Route path="/counter" element={<Counter />} />
         </Routes>

@@ -30,9 +30,9 @@
   }
 }
 
-.App-header {
+.header {
   background-color: #ffffff;
-  min-height: 10vh;
+  max-height: 10vh;
   display: flex;
   flex-direction: row;
   color: #000000;
@@ -89,4 +89,69 @@ button {
   background-color: #ffffff;
   color: #ff7323;
   border: 2px solid #ff7323;
+}
+
+/* Shoelace Style */
+h1 {
+  font-family: var(--sl-font-sans);
+  font-size: var(--sl-font-size-4x-large);
+  font-weight: var(--sl-font-weight-bold);
+  color: var(--sl-color-gray-900);
+}
+
+h2 {
+  font-family: var(--sl-font-sans);
+  font-size: var(--sl-font-size-3x-large);
+  font-weight: var(--sl-font-weight-semibold);
+  color: var(--sl-color-gray-900);
+}
+
+h3 {
+  font-family: var(--sl-font-sans);
+  font-size: var(--sl-font-size-2x-large);
+  font-weight: var(--sl-font-weight-bold);
+  color: var(--sl-color-gray-900);
+}
+
+h4 {
+  font-family: var(--sl-font-sans);
+  font-size: var(--sl-font-size-x-large);
+  font-weight: var(--sl-font-weight-normal);
+  color: var(--sl-color-gray-900);
+}
+
+p {
+  font-family: var(--sl-font-sans);
+  font-size: var(--sl-font-size-small);
+  font-weight: var(--sl-font-weight-light);
+  color: var(--sl-color-gray-500);
+  flex-direction: column;
+}
+
+.card-login {
+  max-width: fit-content;
+}
+.card-project {
+  min-width: 500px;
+}
+
+.form-project {
+  text-align: left;
+}
+
+sl-button.orange::part(base) {
+  font-family: var(--sl-font-sans);
+  font-size: var(--sl-font-size-large);
+  font-weight: var(--sl-font-weight-semibold);
+  background-color: #ff7f23;
+  color: #ffffff;
+}
+
+sl-button.orange::part(base):hover {
+  background-color: #b65721;
+}
+
+sl-button.orange::part(base):active {
+  background-color: #ffffff;
+  color: #ff7f23;
 }
